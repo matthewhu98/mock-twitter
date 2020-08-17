@@ -1,10 +1,12 @@
-package com.techelevator.dao;
+package com.personalproject.dao;
 
-import com.techelevator.model.User;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.jdbc.core.JdbcTemplate;
+
+import com.personalproject.dao.UserSqlDAO;
+import com.personalproject.model.User;
 
 import javax.sql.DataSource;
 

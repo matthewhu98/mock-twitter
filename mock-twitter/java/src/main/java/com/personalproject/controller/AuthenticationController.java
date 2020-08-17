@@ -1,4 +1,4 @@
-package com.techelevator.controller;
+package com.personalproject.controller;
 
 import javax.validation.Valid;
 
@@ -13,13 +13,13 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.web.bind.annotation.*;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.techelevator.dao.UserDAO;
-import com.techelevator.model.LoginDTO;
-import com.techelevator.model.RegisterUserDTO;
-import com.techelevator.model.User;
-import com.techelevator.model.UserAlreadyExistsException;
-import com.techelevator.security.jwt.JWTFilter;
-import com.techelevator.security.jwt.TokenProvider;
+import com.personalproject.dao.UserDAO;
+import com.personalproject.model.LoginDTO;
+import com.personalproject.model.RegisterUserDTO;
+import com.personalproject.model.User;
+import com.personalproject.model.UserAlreadyExistsException;
+import com.personalproject.security.jwt.JWTFilter;
+import com.personalproject.security.jwt.TokenProvider;
 
 @RestController
 @CrossOrigin

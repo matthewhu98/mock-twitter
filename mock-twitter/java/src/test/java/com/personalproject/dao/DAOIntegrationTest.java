@@ -1,4 +1,4 @@
-package com.techelevator.dao;
+package com.personalproject.dao;
 
 import java.sql.SQLException;
 

@@ -1,4 +1,4 @@
-package com.techelevator.security;
+package com.personalproject.security;
 
 
 import org.slf4j.Logger;
@@ -25,7 +25,7 @@ public class SecurityUtils {
         final Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 
         if (authentication == null) {
-            LOG.debug("no authentication in com.techelevator.security context found");
+            LOG.debug("no authentication in com.personalproject.security context found");
             return Optional.empty();
         }
 
@@ -37,7 +37,7 @@ public class SecurityUtils {
             username = (String) authentication.getPrincipal();
         }
 
-        LOG.debug("found username '{}' in com.techelevator.security context", username);
+        LOG.debug("found username '{}' in com.personalproject.security context", username);
 
         return Optional.ofNullable(username);
     }

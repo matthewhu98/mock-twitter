@@ -1,4 +1,4 @@
-package com.techelevator.model;
+package com.personalproject.model;
 
 import java.util.Objects;
 
