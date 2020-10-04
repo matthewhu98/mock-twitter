@@ -34,10 +34,9 @@ START TRANSACTION;
 INSERT INTO accounts (account_id, user_id, username, accountname)
 VALUES (1, 1, 'testuser', 'testuser'), (2, 2, 'testadmin', 'testadmin'), (3, 3, 'matthew','matthew');
 
-START TRANSACTION;
 INSERT INTO tweets (tweet_id, account_id, tweet_content, date_of_tweet)
 VALUES (1, 1, 'test tweet from user', CURRENT_DATE), (2, 3, 'hey, its ya boi', CURRENT_DATE);
 
-SELECT *
-from tweets;
 COMMIT;
+
+select * from "accounts"
